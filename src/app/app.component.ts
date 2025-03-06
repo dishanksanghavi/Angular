@@ -8,8 +8,14 @@ import { HeaderComponent } from './components/header/header.component';
   imports: [RouterOutlet, HomeComponent, HeaderComponent],
   template: `
   <app-header />
-  <app-home />`,
-  styles: ``
+  <main>
+    <app-home />
+  </main>`,
+  styles: [`
+    main{
+      padding:16px;
+    }
+  `]
 })
 export class AppComponent {
   title = 'Hello World Test';
